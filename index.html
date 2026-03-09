@@ -26,6 +26,35 @@
       overflow-x: hidden;
     }
 
+    /* X Button */
+    .x-button {
+      position: fixed;
+      top: 1.2rem;
+      right: 1.2rem;
+      z-index: 100;
+      width: 44px;
+      height: 44px;
+      background: rgba(0,0,0,0.85);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .x-button:hover {
+      transform: scale(1.1);
+      background: #000;
+    }
+
+    .x-button svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
     /* Hero */
     .hero {
       min-height: 100vh;
@@ -286,6 +315,11 @@
   </style>
 </head>
 <body>
+
+  <!-- X/Twitter Button -->
+  <a class="x-button" href="https://x.com/floriacat" target="_blank" rel="noopener" aria-label="Follow on X">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
 
   <!-- Hero -->
   <div class="hero">
